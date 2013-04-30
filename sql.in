@@ -1,0 +1,15 @@
+database scut charset utf8
+table department
+* #dept_name        * building           * budget       *
+| varchar(20)       | varchar(20) exchoice | numeric(3,2) random 1.01 9.99 |
+| Comp.Sci.         | B1
+| Traf.Eng.         | B2
+| Civi.Eng.         | B3
+| Physics           | B4
+| Envi.Eng.         | B5
+| Geol.Sci.         | B6
+| Mech.Sci.         | B7
+
+table instructor @ department dept_name
+* #ins_id           * name           * dept_name @ 0 0   * salary        *
+| varchar(12) random 200000000000 201399999999 | varchar(15) exchoice | varchar(20) | numeric(8,2) random 2000 600000 |
